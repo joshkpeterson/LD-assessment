@@ -1,10 +1,12 @@
 import React from 'react'
 import styles from "../styles/ProjectCard.module.scss"
 
-function ProjectCard({ project }) {
+function ProjectCard({ project: { title, description, img_url } }) {
   return (
     <div>
-      {project.foo}
+      {title}
+      {description}
+      <img src={img_url} alt="" />
     </div>
   )
 }

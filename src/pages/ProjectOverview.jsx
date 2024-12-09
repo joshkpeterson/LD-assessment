@@ -5,6 +5,8 @@ import projectsData from '../assets/projects.json'
 
 function ProjectOverview() {
   const projects = projectsData.projects
+  console.log(projects)
+  console.log("foo")
 
   return (
     <div>

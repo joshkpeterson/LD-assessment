@@ -8,7 +8,7 @@ function ProjectList({ projects }) {
     <div className={styles.projectListContainer}>
     { 
       projects.map(project => 
-        <ProjectCard project={project} />
+        <ProjectCard key={project.id} project={project} />
       )
     }
     </div>
