@@ -1,7 +1,10 @@
-@import ‘../variables‘;
+@use 'variables' as *;
 
-// Fonts
 body {
+  margin: 0;
+  padding: 0;
+
+  // Fonts
   font-family: 'Arial', sans-serif;
   font-weight: normal;
   color: $black;
