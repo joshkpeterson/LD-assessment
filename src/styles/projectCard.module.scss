@@ -1,0 +1,12 @@
+
+
+.projectCardContainer {
+  background: tomato;
+  // width: 100%;
+  // grid-column: 1;
+  // grid-row: 1;
+
+  &__image {
+    width: 100%;
+  }
+}

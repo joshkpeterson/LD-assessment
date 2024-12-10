@@ -1,4 +1,55 @@
+.outerContainer {
+
+  @media (min-width: 700px) {
+
+  display: flex;
+  justify-content: center;
+  // padding:
+  }
+
+}
+
 
 .projectListContainer {
   background: lavender;
+  margin: 0 40px;
+  // position: relative;
+  
+  display: grid;
+  row-gap: 64px;
+  column-gap: 18px;
+  // grid-template-columns: repeat(auto-fill, minmax(max-content, 316px));
+  grid-template-columns: 1fr;
+
+
+  display: grid;
+  /* set our column widths with wrapping in place */
+  grid-template-columns: repeat(auto-fill, 100%);
+  // gap: 60px;
+  /* center our columns relative to the container */
+  justify-content: center;
+  /* add a max-width to prevent more than 3 columns */
+  max-width: 1200px;
+  // margin: auto;
+
+
+
+
+  @media (min-width: 700px) {
+    grid-template-columns: repeat(2, 300px);
+    // grid-template-columns: repeat(auto-fill, 315px);
+
+    // grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+
+
+    // max-width: 980px;
+  }
+
+  @media (min-width: 1060px) {
+    grid-template-columns: repeat(auto-fill, 315px);
+    // grid-template-columns: repeat(3, 1fr);
+
+    // max-width: 980px;
+  }
 }

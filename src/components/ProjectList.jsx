@@ -5,6 +5,8 @@ import styles from '../styles/ProjectList.module.scss'
 
 function ProjectList({ projects }) {
   return (
+    <div className={styles.outerContainer}>
+
     <div className={styles.projectListContainer}>
     { 
       projects.map(project => 
@@ -12,6 +14,9 @@ function ProjectList({ projects }) {
       )
     }
     </div>
+
+    </div>
+
   )
 }
 
