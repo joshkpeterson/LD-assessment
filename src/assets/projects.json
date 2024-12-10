@@ -7,68 +7,68 @@
       "location": "Spandau",
       "date_start": "2024-12-01",
       "date_end": "2025-01-01",
-      "img_url": "./public/images/card-image-1.jpg",
+      "img_url": "/images/card-image-1.jpg",
       "img_caption": "copyright by photograph",
       "tags": [
         {
-          "name": "Urban development"
+          "tagName": "Urban development"
         },
         {
-          "name": "Sustainability"
+          "tagName": "Sustainability"
         }
       ]
     },
     {
-      "id": 0,
+      "id": 1,
       "title": "Title of an external project - Starting in future",
       "description": "Berlin Online Engagement: Empowering citizens to shape their city's future via digital platforms. Fostering dialogue, collaboration, and civic action for inclusivity.",
       "location": "Spandau",
       "date_start": "2024-12-01",
       "date_end": "2025-01-01",
-      "img_url": "./public/images/card-image-1.jpg",
+      "img_url": "/images/card-image-1.jpg",
       "img_caption": "copyright by photograph",
       "tags": [
         {
-          "name": "Urban development"
+          "tagName": "Urban development"
         },
         {
-          "name": "Sustainability"
+          "tagName": "Sustainability"
         }
       ]
     },
     {
-      "id": 0,
+      "id": 2,
       "title": "Title of an external project - Starting in future",
       "description": "Berlin Online Engagement: Empowering citizens to shape their city's future via digital platforms. Fostering dialogue, collaboration, and civic action for inclusivity.",
       "location": "Spandau",
       "date_start": "2024-12-01",
       "date_end": "2025-01-01",
-      "img_url": "./public/images/card-image-1.jpg",
+      "img_url": "/images/card-image-1.jpg",
       "img_caption": "copyright by photograph",
       "tags": [
         {
-          "name": "Urban development"
+          "tagName": "Urban development"
         },
         {
-          "name": "Sustainability"
+          "tagName": "Sustainability"
         }
       ]
     },
     {
-      "id": 0,
+      "id": 3,
       "title": "Title of an external project - Starting in future",
       "description": "Berlin Online Engagement: Empowering citizens to shape their city's future via digital platforms. Fostering dialogue, collaboration, and civic action for inclusivity.",
       "location": "Spandau",
       "date_start": "2024-12-01",
       "date_end": "2025-01-01",
-      "img_url": "./public/images/card-image-1.jpg",
+      "img_url": "/images/card-image-1.jpg",
       "img_caption": "copyright by photograph",
       "tags": [
         {
-          "name": "Urban development"
+          "tagName": "Urban development"
         },
         {
-          "name": "Sustainability"
+          "tagName": "Sustainability"
         }
       ]
     }
