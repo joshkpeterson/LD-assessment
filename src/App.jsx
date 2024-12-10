@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Nav from "./components/Nav.jsx";
 import ProjectOverview from "./pages/ProjectOverview.jsx";
 

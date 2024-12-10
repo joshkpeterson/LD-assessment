@@ -1,8 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import ProjectCard from "./ProjectCard";
 import styles from "../styles/ProjectList.module.scss";
-
-import React, { useState } from 'react';
 
 /**
  * ProjectList Component
