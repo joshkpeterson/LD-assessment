@@ -2,9 +2,12 @@
 
 
 .projectCardContainer {
+  background: tomato;
 
   &--isList {
     @media (min-width: 700px) {
+      background: yellow;
+      grid-column: 1 / -1;
 
       // background: skyblue;
       display: flex;

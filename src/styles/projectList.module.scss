@@ -1,5 +1,15 @@
 @use 'variables' as *;
 
+.projectList__outerContainer {
+
+  @media (min-width: 700px) {
+  // Not sure this was doing anything
+  // display: flex;
+  // justify-content: center;
+  }
+
+}
+
 .projectListContainer {
   // background: lavender;
     display: grid;
@@ -8,15 +18,18 @@
     // grid-template-columns: 1fr;
     grid-template-columns: repeat(auto-fill, 100%);
     justify-content: center;
-    max-width: 1200px;
+    // max-width: 1200px;
     margin: 0 40px;
 
 
   &__controls {
+    grid-column: 1 / -1;
     display: flex;
     justify-content: flex-end;
     // padding: 20px;
     background: tomato;
+    // max-width: 1200px;
+    // margin: 0 40px;
 
     & > * {
       padding: 10px 20px;
@@ -44,9 +57,11 @@
   }
 
   &--isList {
+    row-gap: 0;
+
     @media (min-width: 700px) {
-      display: block;
-      margin: 0 auto;
+      // display: block;
+      // margin: 0 auto;
       min-width: 686px;
       max-width: 986px;
     }
@@ -70,13 +85,5 @@
     // max-width: 980px;
   }
 
-  &__outerContainer {
 
-    @media (min-width: 700px) {
-    // Not sure this was doing anything
-    // display: flex;
-    // justify-content: center;
-    }
-  
-  }
 }
