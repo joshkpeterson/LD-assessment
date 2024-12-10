@@ -3,10 +3,9 @@
 
 .projectListContainer {
   background: lavender;
-  margin: 0 auto;
-  max-width: 686px;
 
-  &--isGrid {
+
+  // &--isGrid {
     display: grid;
     row-gap: 64px;
     column-gap: 18px;
@@ -18,28 +17,32 @@
 
 
 
+  // }
+  &--isList {
+    @media (min-width: 700px) {
+      display: block;
+      margin: 0 auto;
+      max-width: 686px;
+    }
   }
-  
+
+  @media (min-width: 700px) {
+    grid-template-columns: repeat(2, 300px);
+    // grid-template-columns: repeat(auto-fill, 315px);
+
+    // grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
 
 
+    // max-width: 980px;
+  }
 
-  // @media (min-width: 700px) {
-  //   grid-template-columns: repeat(2, 300px);
-  //   // grid-template-columns: repeat(auto-fill, 315px);
+  @media (min-width: 1060px) {
+    grid-template-columns: repeat(auto-fill, 315px);
+    // grid-template-columns: repeat(3, 1fr);
 
-  //   // grid-template-columns: repeat(3, 1fr);
-  //   margin: 0 auto;
-
-
-  //   // max-width: 980px;
-  // }
-
-  // @media (min-width: 1060px) {
-  //   grid-template-columns: repeat(auto-fill, 315px);
-  //   // grid-template-columns: repeat(3, 1fr);
-
-  //   // max-width: 980px;
-  // }
+    // max-width: 980px;
+  }
 
   &__outerContainer {
 

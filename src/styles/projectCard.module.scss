@@ -4,6 +4,8 @@
 .projectCardContainer {
 
   &--isList {
+    @media (min-width: 700px) {
+
     background: skyblue;
     display: flex;
 
@@ -15,6 +17,7 @@
       padding-right: 24px;
       object-fit: cover;
     }
+  }
   }
 
   background: tomato;
