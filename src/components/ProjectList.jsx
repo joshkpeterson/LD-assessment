@@ -1,14 +1,13 @@
-import React, { useState } from 'react'
-import ProjectCard from './ProjectCard'
-import styles from '../styles/ProjectList.module.scss'
-
+import React, { useState } from "react";
+import ProjectCard from "./ProjectCard";
+import styles from "../styles/ProjectList.module.scss";
 
 function ProjectList({ projects }) {
+  const [isList, setIsList] = useState(true);
 
-  const [isList, setIsList] = useState(true)
-
-  const projectListStyles = `${styles.projectListContainer} ${isList ? 
-    styles['projectListContainer--isList'] : ''}`
+  const projectListStyles = `${styles.projectListContainer} ${
+    isList ? styles["projectListContainer--isList"] : ""
+  }`;
 
   return (
     <div className={styles.projectList__outerContainer}>
@@ -31,17 +30,16 @@ function ProjectList({ projects }) {
             Grid
           </button>
         </div>
-        {projects.map((project, index) => (
+        {projects.map(project => (
           <ProjectCard
             key={project.id}
             project={project}
             isList={isList}
-            // tabIndex={index + 1}
           />
         ))}
-      </div>  
+      </div>
     </div>
   );
 }
 
-export default ProjectList
+export default ProjectList;

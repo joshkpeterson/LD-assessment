@@ -1,18 +1,17 @@
-import { useState } from 'react'
-import Nav from './components/Nav.jsx'
-import ProjectOverview from './pages/ProjectOverview.jsx'
+import { useState } from "react";
+import Nav from "./components/Nav.jsx";
+import ProjectOverview from "./pages/ProjectOverview.jsx";
 
-import './styles/main.scss'
-import './App.css'
+import "./styles/main.scss";
+import "./App.css";
 
 function App() {
-
   return (
     <>
       <Nav />
       <ProjectOverview />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
