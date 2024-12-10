@@ -1,39 +1,24 @@
 @use 'variables' as *;
 
 
-.projectCard__outerContainer {
-  list-style: none;
-}
-
 .projectCardContainer {
-  background: tomato;
 
   &--isList {
-    @media (min-width: 700px) {
-      background: yellow;
+    @media (min-width: $projectCardContentBreakpoint) {
       grid-column: 1 / -1;
-
-      // background: skyblue;
       display: flex;
-      border-bottom: 1px solid $gray; 
+      border-bottom: 1px solid $gray;
       padding: 30px 0 0;
       max-width: 686px;
 
       .projectCardContainer__image {
         width: 230px;
         height: 224px;
-        // background-position: center center;
-        // background-repeat: no-repeat;
         padding-right: 24px;
         object-fit: cover;
       }
     }
   }
-
-  // background: tomato;
-  // width: 100%;
-  // grid-column: 1;
-  // grid-row: 1;
 
   &__image {
     width: 100%;
@@ -62,7 +47,6 @@
     list-style: none;
     padding-left: 0;
 
-
     & li {
       background-color: $primaryGreen;
       display: inline-block;
@@ -80,7 +64,7 @@
   &__progressBar {
     background-color: $gray;
 
-    > div {
+    >div {
       height: 4px;
       background-color: $primaryGreen;
     }
