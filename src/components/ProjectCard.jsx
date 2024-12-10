@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "../styles/ProjectCard.module.scss";
 
 /**
@@ -38,7 +37,7 @@ function ProjectCard({
   const progress = 50;
   const progressBarWidthStyle = { width: `${progress}%` };
 
-  // isList state by buttons in parent
+  // isList set by buttons in parent
   const projectCardStyles = `${styles.projectCardContainer} ${
     isList ? styles["projectCardContainer--isList"] : ""
   }`;
