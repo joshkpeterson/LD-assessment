@@ -1,8 +1,13 @@
-# React + Vite
+# Technical Assessment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React app which shows a "Project Overview" page. A list of cards is rendered for ongoing project. The list has two view modes which can be toggled. Responsive and accesible best practices are followed.
 
-Currently, two official plugins are available:
+## To Run:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```
+npm install # or yarn install 
+npm run dev # or yarn dev
+```
+
+Finally, visit the given page in your browser - possibly http://localhost:5173/ 
+

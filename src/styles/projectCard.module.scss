@@ -1,0 +1,78 @@
+@use 'variables' as *;
+
+
+.projectCardContainer {
+
+  // Only show Horizontal version of card on large displays
+  &--isList {
+    @media (min-width: $projectCardContentBreakpoint) {
+      grid-column: 1 / -1;
+      display: flex;
+      padding: 30px 0 0;
+      max-width: 686px;
+      border-bottom: 1px solid $gray;
+
+      .projectCardContainer__image {
+        width: 230px;
+        height: 224px;
+        padding-right: 24px;
+        object-fit: cover;
+      }
+    }
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  &__img_caption {
+    font-size: 11px;
+    line-height: 8px;
+  }
+
+  &__location {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 23px;
+  }
+
+  &__tags {
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 18px;
+    list-style: none;
+    padding-left: 0;
+
+    & li {
+      background-color: $primaryGreen;
+      display: inline-block;
+      margin: 0 8px 8px 0;
+      border-radius: 10px;
+      padding: 2px 8px;
+    }
+  }
+
+  &__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &__progressBar {
+    background-color: $gray;
+
+    > div {
+      height: 4px;
+      background-color: $primaryGreen;
+    }
+  }
+
+  &__daysLeftLabel {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
