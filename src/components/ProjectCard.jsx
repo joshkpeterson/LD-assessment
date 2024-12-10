@@ -1,6 +1,25 @@
 import React from "react";
 import styles from "../styles/ProjectCard.module.scss";
 
+/**
+ * ProjectCard Component
+ * 
+ * Renders a project card which would be clickable in a real app.
+ * Projects are displayed as Horizontal/List (large displays only) or Grid.
+ * 
+ * Props:
+ * - isList: boolean setting whether Horizontal/List or Grid.
+ * - project: object containing attributes for the card.
+ * 
+ * State: (none)
+ * 
+ * Example Usage:
+ * <ProjectCard
+ *   key={project.id}
+ *   project={project}
+ *   isList={isList}
+ * />
+ */
 function ProjectCard({
   isList,
   project: {

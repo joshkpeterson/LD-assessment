@@ -3,7 +3,7 @@ import ProjectList from "../components/ProjectList.jsx";
 import projectsData from "../assets/projects.json";
 
 function ProjectOverview() {
-  // TODO: React Query to fetch projects data
+  // TODO: React Query to fetch projects data, add mock API package
   const projects = projectsData.projects;
 
   return (

@@ -7,9 +7,9 @@
     @media (min-width: $projectCardContentBreakpoint) {
       grid-column: 1 / -1;
       display: flex;
-      border-bottom: 1px solid $gray;
       padding: 30px 0 0;
       max-width: 686px;
+      border-bottom: 1px solid $gray;
 
       .projectCardContainer__image {
         width: 230px;
