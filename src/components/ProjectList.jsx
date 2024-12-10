@@ -18,7 +18,7 @@ function ProjectList({ projects }) {
             className={styles.projectListContainer__controls__listButton}>
             List
           </button>
-          <button onClick={() => setIsList(false)} 
+          <button onClick={() => setIsList(false)}
             className={styles.projectListContainer__controls__gridButton}>
             Grid
           </button>

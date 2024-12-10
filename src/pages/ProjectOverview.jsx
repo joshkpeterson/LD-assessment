@@ -8,10 +8,9 @@ function ProjectOverview() {
   const projects = projectsData.projects
 
   return (
-    <div>
-      Project Overview
+    <main>
       <ProjectList projects={projects} />
-    </div>
+    </main>
   )
 }
 
