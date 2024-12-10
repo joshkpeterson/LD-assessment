@@ -15,7 +15,7 @@
     justify-content: flex-end;
     height: 40px;
 
-    &>* {
+    & > * {
       display: none;
       padding: 10px 20px;
       border: none;
@@ -47,6 +47,8 @@
     }
   }
 
+  // Mobile-first; Small displays get Grid and no controls,
+  // Large displays get controls between Horizontal and Grid
   @media (min-width: $projectCardContentBreakpoint) {
     grid-template-columns: repeat(2, 300px);
     margin: 0 auto;

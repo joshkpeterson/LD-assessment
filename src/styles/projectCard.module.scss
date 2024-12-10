@@ -3,6 +3,7 @@
 
 .projectCardContainer {
 
+  // Only show Horizontal version of card on large displays
   &--isList {
     @media (min-width: $projectCardContentBreakpoint) {
       grid-column: 1 / -1;
@@ -64,7 +65,7 @@
   &__progressBar {
     background-color: $gray;
 
-    >div {
+    > div {
       height: 4px;
       background-color: $primaryGreen;
     }
