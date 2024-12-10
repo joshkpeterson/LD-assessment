@@ -4,9 +4,8 @@ import projectsData from '../assets/projects.json'
 
 
 function ProjectOverview() {
+  // TODO: React Query to fetch projects data
   const projects = projectsData.projects
-  console.log(projects)
-  console.log("foo")
 
   return (
     <div>

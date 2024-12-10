@@ -1,13 +1,14 @@
 import React from 'react'
 import styles from '../styles/ProjectCard.module.scss'
 
-function ProjectCard({ project: { title, description, img_url, img_caption, location, tags } }) {
+function ProjectCard({ isList, project: { title, description, img_url, img_caption, location, tags } }) {
+  // TODO: daysLeft can be easily calculated from the json data
   const daysLeft = 5
   const daysLeftLabel = `${daysLeft} days left`
   const progress = 50
   const progressBarWidthStyle = { width: `${progress}%` }
   
-  const isList = true;
+  // Set by buttons in parent
   const projectCardStyles = `${styles.projectCardContainer} ${isList ? 
       styles['projectCardContainer--isList'] : ''}`
 
