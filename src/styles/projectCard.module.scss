@@ -6,8 +6,10 @@
   &--isList {
     @media (min-width: 700px) {
 
-    background: skyblue;
+    // background: skyblue;
     display: flex;
+    border-bottom: 1px solid $gray; 
+    padding: 30px 0 0;
 
     .projectCardContainer__image {
       width: 230px;
@@ -20,7 +22,7 @@
   }
   }
 
-  background: tomato;
+  // background: tomato;
   // width: 100%;
   // grid-column: 1;
   // grid-row: 1;

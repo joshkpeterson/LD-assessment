@@ -2,10 +2,9 @@
 
 
 .projectListContainer {
-  background: lavender;
+  // background: lavender;
 
 
-  // &--isGrid {
     display: grid;
     row-gap: 64px;
     column-gap: 18px;
@@ -16,8 +15,6 @@
     margin: 0 40px;
 
 
-
-  // }
   &--isList {
     @media (min-width: 700px) {
       display: block;
