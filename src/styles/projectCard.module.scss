@@ -2,6 +2,21 @@
 
 
 .projectCardContainer {
+
+  &--isList {
+    background: skyblue;
+    display: flex;
+
+    .projectCardContainer__image {
+      width: 230px;
+      height: 224px;
+      // background-position: center center;
+      // background-repeat: no-repeat;
+      padding-right: 24px;
+      object-fit: cover;
+    }
+  }
+
   background: tomato;
   // width: 100%;
   // grid-column: 1;
