@@ -1,6 +1,10 @@
 @use 'variables' as *;
 
 
+.projectCard__outerContainer {
+  list-style: none;
+}
+
 .projectCardContainer {
   background: tomato;
 

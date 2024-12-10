@@ -12,30 +12,25 @@ function ProjectCard({ isList, project: { title, description, img_url, img_capti
   const projectCardStyles = `${styles.projectCardContainer} ${isList ? 
       styles['projectCardContainer--isList'] : ''}`
 
-// console.log(projectCardStyles)
-// console.log(styles.projectCardContainer)
-// console.log(styles['projectCardContainer--isList'])
-// // console.log(styles.projectCardContainer__isList)
-
   return (
-    <div className={projectCardStyles}>
-      <header>
+    <a className={projectCardStyles} tabindex="0" role="listitem">
+      <div>
         <img className={styles.projectCardContainer__image} src={img_url} alt={img_alt} />
         <p className={styles.projectCardContainer__img_caption}>{img_caption}</p>
-      </header>
-      <section>
+      </div>
+      <div>
         <p className={styles.projectCardContainer__location}>{location}</p>
         <ul className={styles.projectCardContainer__tags}>
           { tags.map(({ tagName }) => <li key={tagName}>{tagName}</li>)}
         </ul>
-        <p className={styles.projectCardContainer__title}>{title}</p>
+        <h3 className={styles.projectCardContainer__title}>{title}</h3>
         <p className={styles.projectCardContainer__description}>{description}</p>
         <div className={styles.projectCardContainer__progressBar}>
           <div style={progressBarWidthStyle}></div>
         </div> 
         <p className={styles.projectCardContainer__daysLeftLabel}>{daysLeftLabel}</p>
-      </section>
-    </div>
+      </div>
+    </a>
   )
 }
 
