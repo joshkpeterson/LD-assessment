@@ -12,7 +12,6 @@ function ProjectList({ projects }) {
 
   return (
     <div className={styles.projectList__outerContainer}>
-
       <div className={projectListStyles}>
         <div className={styles.projectListContainer__controls}> 
           <button onClick={() => setIsList(true)} 

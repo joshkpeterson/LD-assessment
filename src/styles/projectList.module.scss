@@ -18,7 +18,7 @@
     // grid-template-columns: 1fr;
     grid-template-columns: repeat(auto-fill, 100%);
     justify-content: center;
-    // max-width: 1200px;
+    max-width: 1200px;
     margin: 0 40px;
 
 
@@ -30,8 +30,10 @@
     background: tomato;
     // max-width: 1200px;
     // margin: 0 40px;
+    height: 40px;
 
-    & > * {
+    & > button {
+      display: none;
       padding: 10px 20px;
       border: none;
       font-size: 16px;
@@ -53,6 +55,12 @@
       background-color: white;
       color: $black;
       border: 1px solid $black; /* Optional for better visibility */
+    }
+
+    @media (min-width: 700px) {
+      & > button {
+        display: block;
+      }
     }
   }
 
